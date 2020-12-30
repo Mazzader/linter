@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mt-5">Загрузите .js файл прямо сейчас!</h1>
+<form class="form-control mt-5" method="POST" action="post">
+    {% csrf_token %}
+    <div class="input-group">
+      <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" enctype="multipart/form-data" name="file">
+      <button class="btn btn-primary" type="submit" id="inputGroupFileAddon04">Добавить файл</button>
+    </div>
+</form>
+{% endblock %}
