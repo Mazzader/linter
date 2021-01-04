@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Test finished with fails: </h1>
+{%for item in fail%}
+    <p>{{ item }}</p>
+{% endfor %}
+
+{% endblock %}
